@@ -312,4 +312,4 @@ with gr.Blocks() as blocks:
 
 # Launch the Gradio interface
 if __name__ == "__main__":
-    blocks.launch(show_api=False)   
+    blocks.launch(show_api=False,share=True)   
