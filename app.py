@@ -49,7 +49,12 @@ def send_email(recipient_email, base_url, bearer_token, user_id):
 
     # Get list of files in user directory
     user_dir = '/demos/retail/puppybot/' + user_id
+
+    
     files_list = get_files_list(base_url, bearer_token, user_dir)
+
+    if (len(files_list)) == 0:
+         return "Please enter a valid UserId!"
     
     # input_image = download_image(base_url, bearer_token, download_path)
     # # return input_image
